@@ -1,0 +1,383 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(./fonts/OpenSans.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+#m-ver {
+    display: none;
+}
+
+#page1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#p1-container {
+    height: 97%;
+    width: 98%;
+    background-image: url("https://images.unsplash.com/photo-1483794344563-d27a8d18014e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#p1-nav {
+    height: 15%;
+    width: 100%;
+    display: flex;
+}
+
+#p1-nav-left {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 50px;
+    color: #333446;
+    font-family: "OpenSans";
+    font-size: 20px;
+    line-height: 20px;
+
+}
+
+#p1-nav-right {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: #333446;
+    font-family: "OpenSans";
+    font-size: 12px;
+}
+
+#p1-nav-right h3 {
+    margin: 0 40px;
+}
+
+#p1-nav-right h3:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+#p1-nav-right a {
+    text-decoration: none;
+    color: #333446;
+}
+
+#p1-nav-right span {
+    border: 2px solid black;
+    padding: 8px;
+    display: inline-block;
+}
+
+#p1-nav-right span:hover {
+    background-color: rgba(17, 31, 71, 0.2);
+    cursor: pointer;
+}
+
+#p1-content {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#p1-content h1 {
+    font-size: 10rem;
+    font-family: "OpenSans";
+    color: #333444;
+}
+
+#p1-content h3 {
+    font-size: 1.5rem;
+    font-family: "OpenSans";
+    color: #333444;
+}
+
+#underline {
+    height: 5px;
+    width: 50px;
+    background-color: #333444;
+    margin-top: 15px;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E1E6E0;
+}
+
+#p2-title h1 {
+    font-size: 2rem;
+    font-family: "OpenSans";
+    font-weight: 600;
+    color: #333444;
+}
+
+#p2-cards {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.p2-card {
+    height: 80%;
+    width: 25%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card-img:hover {
+    cursor: pointer;
+    height: 60%;
+    transition: all 0.5s ease-in;
+}
+
+.card-img {
+    height: 50%;
+    width: 100%;
+}
+
+.card-desc {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-desc p {
+    width: 80%;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "OpenSans";
+}
+
+#card-img1 {
+    background-image: url("https://plus.unsplash.com/premium_photo-1675864662211-b60c700a0123?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#card-img2 {
+    background-image: url("https://images.unsplash.com/photo-1514509353532-1419c0935d72?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 150%;
+    background-position: bottom;
+}
+
+#card-img3 {
+    background-image: url("https://images.unsplash.com/photo-1496309732348-3627f3f040ee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 120%;
+}
+
+#page3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E1E6E0;
+}
+
+#p3-container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+
+#p3-content-left {
+    height: 100%;
+    width: 50%;
+    background-image: url("https://images.unsplash.com/photo-1505210448888-9bd04f8f875c?q=80&w=681&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 100%;
+    background-position: center;
+}
+
+#p3-content-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FDFDFD;
+}
+
+#p3-title h3 {
+    font-size: 2rem;
+    font-family: "OpenSans";
+    color: #333444;
+}
+
+#p3-content-right p {
+    width: 80%;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 25px;
+    margin-top: 30px;
+    font-family: "OpenSans";
+    color: #333444dd;
+}
+
+#page4 {
+    height: 80%;
+    width: 100%;
+    background-color: #E1E6E0;
+}
+
+#p4-content1 {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#p4-content1 h2 {
+    font-size: 2rem;
+    font-family: "OpenSans";
+    margin-bottom: 15px;
+    color: #333444dd;
+}
+
+#p4-content1 h3 {
+    font-size: 1rem;
+    font-family: "OpenSans";
+    margin-bottom: 20px;
+    color: #333444dd;
+}
+
+#p4-content1 input {
+    border: none;
+    padding: 15px 80px;
+    margin-bottom: 20px;
+    font-family: "OpenSans";
+}
+
+#p4-content1 span {
+    border: 2px solid black;
+    padding: 8px;
+    display: inline-block;
+}
+
+#p4-content1 span:hover {
+    background-color: rgba(17, 31, 71, 0.2);
+    cursor: pointer;
+}
+
+#p4-content2 {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    background-color: #FDFDFD;
+}
+
+#p4-content2-left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#SM {
+    margin-left: 30px;
+}
+
+#SM i {
+    font-size: 1.2rem;
+    margin: 0 8px;
+    color: white;
+    background-color: #333444;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#p4-content2-right {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: #333446;
+    font-family: "OpenSans";
+    font-size: 12px;
+}
+
+#p4-content2-right h3 {
+    color: #333446;
+    font-family: "OpenSans";
+    font-size: 14px;
+    margin: 0 50px;
+}
+
+#p4-content2-right h3:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+#p4-content2-right a {
+    text-decoration: none;
+    color: #333446;
+}
+
+#mob-ver {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+    #main {
+        display: none;
+    }
+
+    #mob-ver {
+        width: 100%;
+        height: 100%;
+        background-color: #333444;
+        display: initial;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #mob-ver h1 {
+        font-family: "OpenSans";
+        font-size: 1.5rem;
+        color: #FDFDFD;
+    }
+}
